@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+	<link rel="stylesheet" href="assets/estilo.css">
+
+    <title>Visualização de dados com Chart.js</title>
+  </head>
+  <body>
+    
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	  <a class="navbar-brand" href="index.html">
+		<i class="fas fa-home"></i>
+	  </a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+		  <li class="nav-item active">
+			<a class="nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" target="blank" href="https://www.chartjs.org">Chart.js</a>
+		  </li>
+		</ul>
+	  </div>
+	</nav>
+	
+	<div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="graficos">
+					<canvas id="graficoDeLinhas"></canvas>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="graficos">
+					<canvas id="graficoDeBarras"></canvas>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md">
+				<div class="graficos">
+					<canvas id="graficoDeTorta"></canvas>
+				</div>
+			</div>
+			<div class="col-md">
+				<div class="graficos">
+					<canvas id="graficoDe"></canvas>
+				</div>				
+			</div>
+		</div>
+	</div>
+	
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>	
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+	<script src="assets/graficos.js"></script>
+  </body>
+</html>
